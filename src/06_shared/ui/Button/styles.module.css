@@ -1,0 +1,37 @@
+.button {
+  border-radius: 8px;
+  width: 140px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  outline: none; 
+  box-sizing: border-box;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+  margin-top: 5px;
+}
+  
+  .primary {
+    background-color: #3b82f6;
+    color: #fff;
+  }
+  
+  .primary:hover {
+    background-color: #2563eb;
+  }
+  
+  .secondary {
+    background-color: #e5e7eb;
+    color: #111827;
+  }
+  
+  .secondary:hover {
+    background-color: #d1d5db;
+  }
+  
+  .button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  

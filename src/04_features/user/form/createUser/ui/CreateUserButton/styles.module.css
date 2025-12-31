@@ -1,0 +1,12 @@
+.wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-right: 25px; 
+    margin-bottom: 20px;
+  }
+
+  .createButton {
+    width: 200px;  
+    height: 45px; 
+  }

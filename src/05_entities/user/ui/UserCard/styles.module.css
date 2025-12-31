@@ -1,0 +1,11 @@
+.userCard {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: #fff;
+    width: 200px;
+    height: 220px;   
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }

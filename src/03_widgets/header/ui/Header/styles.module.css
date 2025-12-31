@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cccccc;
+    border-radius: 16px 16px 16px 16px;
+    padding: 5px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 600;
+    padding: 10px;
+    color: #3b82f6;
+}
+
+.nav {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.navLink {
+    padding: 10px;
+    color: #3b82f6;
+}
+
+.active {
+    font-weight: 600;
+    color: #000;
+}

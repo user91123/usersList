@@ -1,0 +1,14 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    margin-top: 15px;
+    flex: 1;
+    padding: 20px;
+    background-color: #cccccc;
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
