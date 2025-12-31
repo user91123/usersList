@@ -1,4 +1,5 @@
-import type { Middleware, UnknownAction } from "@reduxjs/toolkit";
+import type { Middleware } from "@reduxjs/toolkit";
+import { isAction } from "@reduxjs/toolkit";
 import {
   saveToLocalStorage,
   STORAGE_FAVORITES_KEY,
@@ -6,10 +7,10 @@ import {
 } from "@/06_shared/libs/localStorage";
 
 export const localStorageMiddleware: Middleware =
-  (store) => (next) => (action: UnknownAction) => {
+  (store) => (next) => (action) => {
     const result = next(action);
 
-    if (action.type.startsWith("user/")) {
+    if (isAction(action) && action.type.startsWith("user/")) {
       const state = store.getState();
 
       saveToLocalStorage(STORAGE_FAVORITES_KEY, state.user.favoritesUsers);
